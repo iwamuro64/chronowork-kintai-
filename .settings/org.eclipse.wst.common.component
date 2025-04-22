@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="chrono">
+        
+    <wb-module deploy-name="chronoWork">
+                
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+                
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
-        <property name="context-root" value="chrono"/>
-        <property name="java-output-path" value="/chrono/build/classes"/>
+                
+        <property name="java-output-path" value="/chronoWork/build/classes"/>
+        <property name="context-root" value="chronoWork"/>
+            
     </wb-module>
+    
 </project-modules>
