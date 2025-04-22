@@ -1,0 +1,162 @@
+@charset "UTF-8";
+
+
+
+/* 画面全体の共通レイアウト */
+body {
+	margin: 0;
+	font-family: "Helvetica Neue", sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+}
+
+/* ヘッダー全体 */
+.header-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #004080;
+	color: white;
+	padding: 10px 20px;
+}
+
+/* ロゴ */
+.logo-container {
+	flex-shrink: 0;
+}
+
+.logo-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.logo-img {
+	height: 70px;
+	width: auto;
+	border-radius: 10px;
+}
+
+/* 空白スペーサー（可変幅） */
+.spacer {
+	flex: 1;
+}
+
+/* ログアウト/ログインボタン用 */
+.auth-button-container {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.auth-button-container form {
+	margin: 0;
+}
+
+.logout-button,
+.login-button {
+	background-color: #ffffff;
+	color: #004080;
+	border: 1px solid #004080;
+	padding: 8px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.logout-button:hover,
+.login-button:hover {
+	background-color: #e0e0e0;
+}
+
+
+/* メインコンテンツ */
+.menu-container {
+	text-align: center;
+	margin-top: 50px;
+}
+
+/* 大きめボタン専用 */
+.menu-btn {
+	width: 100%;
+	max-width: 200px;
+	height: 50px;
+	font-size: 18px;
+	margin: 10px;
+	cursor: pointer;
+	background-color: #004080;
+	color: white;
+	border: none;
+	border-radius: 5px;
+}
+
+.menu-btn:hover {
+	background-color: #0059b3;
+}
+
+/* 無効化された（disabled）ボタンの見た目を設定 */
+.menu-btn:disabled {
+	background-color: #cccccc;
+	color: #666666;
+	cursor: not-allowed;
+	opacity: 0.6;
+}
+
+/*小さいサイズのボタン*/
+.mini-btn {
+	max-width: 150px;
+	height: 30px;
+	font-size: 16px;
+	margin: 10px;
+	background-color: #004080;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.mini-btn:hover {
+	background-color: #0059b3;
+}
+
+.form-field {
+	margin-bottom: 15px;
+}
+
+.form-field label {
+	display: inline-block;
+	width: 100px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.form-field input {
+	padding: 5px;
+	width: 200px;
+}
+
+
+/*テーブル*/
+.center-table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	width: 60%;
+	/* 幅調整もしたい場合 */
+}
+
+.center-table th,
+.center-table td {
+	padding: 2px 8px;
+	text-align: center;
+}
+
+.center-table th {
+	background-color: #f0f0f0;
+}
+
+/* フッター */
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #ddd;
+}
